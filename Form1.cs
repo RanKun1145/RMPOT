@@ -52,7 +52,10 @@ namespace RMPOT
             CheckPermissions();
             InitializeDefaultCheckBoxState();
         }
-
+        private void HideTyr()
+        {
+            trayIcon.Visible = false;
+        }
         private void InitializeTrayIcon()
         {
             trayMenu = new ContextMenuStrip();
